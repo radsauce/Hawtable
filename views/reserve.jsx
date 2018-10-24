@@ -24,7 +24,7 @@ const Reservations = () =>
             <h2 className="text-center">Make your reservation</h2>
             <br />
             <div className="text-center">
-              <a href="tables.html">
+              <a href="/reservationspage">
                 <button className="btn btn-lg btn-primary">
                   <span className="fa fa-list-alt"></span> View Tables</button>
               </a>
