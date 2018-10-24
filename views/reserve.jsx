@@ -37,7 +37,6 @@ const Reservations = () =>
           </div>
           <div className="row">
             <div className="col-lg-12">
-              <!-- Reservation Page -->
         <div className="card">
                 <div className="card-header">
                   Table Reservation
