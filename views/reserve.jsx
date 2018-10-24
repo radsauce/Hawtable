@@ -1,4 +1,4 @@
-const React = require('React')
+const React = require('react')
 const Fragment = React.Fragment
 
 
@@ -37,7 +37,6 @@ const Reservations = () =>
           </div>
           <div className="row">
             <div className="col-lg-12">
-              <!-- Reservation Page -->
         <div className="card">
                 <div className="card-header">
                   Table Reservation
