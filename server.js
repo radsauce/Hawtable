@@ -11,6 +11,7 @@ app.use(bodyparser.json())
 
 app.engine('jsx', require('express-react-views').createEngine())
 
-require('./routes')(app)
+// require('./routes/apiRoutes')(app)
+require('./routes/htmlRoutes')(app)
 
 app.listen(3000, _ => console.log('http://localhost:3000'))

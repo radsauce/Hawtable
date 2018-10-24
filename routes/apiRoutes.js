@@ -3,10 +3,17 @@ const tableData = require("../data/reservations");
 
 
 module.exports = function (app) {
+    app.get("*", function (req, res) {
+        res.render("index")
+    })
+
+    app.get("/reserve", function (req, res) {
+        res.render("reserve")
+    })
+
     app.get("/api/reservations", function (req, res) {
         res.json(tableData)
     });
-
 
     app.post("/api/reservations", function (req, res) {
         // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.

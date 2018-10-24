@@ -3,15 +3,15 @@ const path = require('path')
 
 module.exports = function(app) {
     app.get("/reserve", function(req, res) {
-        res.render(//insert reserve page here);
+        res.render("reserve");
     });
 
     app.get("*", function(req, res) {
-        res.render(//insert home/index page here);
+        res.render("index");
       });
     
     app.get("/reservationspage", function(req, res) {
-        res.render(//insert existing reservations page here);
+        res.render("tables");
     })
 
 }

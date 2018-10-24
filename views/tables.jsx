@@ -21,16 +21,26 @@ const CreatedTables = () =>
             <h1 className="text-center">
               <span className="fa fa-fire"></span> Hot Restaurant</h1>
             <hr />
+<<<<<<< HEAD
             <h2 className="text-center">Current Reservations and Waiting List</h2>
             <br />
             <div className="text-center">
               <a href="/reserve"><button className="btn btn-lg btn-danger"><span className="fa fa-credit-card"></span> Make
             Reservation</button></a>
               <a href="/"><button className="btn btn-lg btn-default"><span className="fa fa-home"></span></button></a>
+=======
+            <h2 class="text-center">Current Reservations and Waiting List</h2>
+            <br>
+              <div class="text-center">
+                <a href="/reserve"><button class="btn btn-lg btn-danger"><span class="fa fa-credit-card"></span> Make
+            Reservation</button></a>
+                <a href="/"><button class="btn btn-lg btn-default"><span class="fa fa-home"></span></button></a>
+>>>>>>> eeee51f2a9ab77a0aa0a30bd6632bf19bd216bcb
             </div>
           </div>
           <div className="row">
             <div className="col-lg-12">
+<<<<<<< HEAD
               <div className="card">
                 <div className="card-header">
                   <h4>Current Reservations</h4>
@@ -45,6 +55,33 @@ const CreatedTables = () =>
                 </div>
                 <div className="card-body">
                   <ul id="waitList" className="list-group"></ul>
+=======
+              <!-- Reservation Page -->
+        <div className="card">
+                <div className="card-header">
+                  Table Reservation
+                    </div>
+                <div className="card-body">
+                  <form role="form">
+                    <div className="form-group">
+                      <label htmlFor="reserve-name">Name</label>
+                      <input type="text" className="form-control" id="reserve-name" />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="reserve-phone">Phone Number</label>
+                      <input type="text" className="form-control" id="reserve-phone" />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="reserve-email">Email</label>
+                      <input type="text" className="form-control" id="reserve-email" />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="reserve-unique-id">Unique ID</label>
+                      <input type="text" className="form-control" id="reserve-unique-id" />
+                    </div>
+                    <button type="submit" className="btn btn-primary submit">Submit</button>
+                  </form>
+>>>>>>> eeee51f2a9ab77a0aa0a30bd6632bf19bd216bcb
                 </div>
               </div>
             </div>
