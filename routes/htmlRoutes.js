@@ -6,11 +6,11 @@ module.exports = function(app) {
         res.render("reserve");
     });
 
-    app.get("*", function(req, res) {
+    app.get("/", function(req, res) {
         res.render("index");
       });
     
-    app.get("/reservationspage", function(req, res) {
+    app.get("/reservations", function(req, res) {
         res.render("tables");
     })
 

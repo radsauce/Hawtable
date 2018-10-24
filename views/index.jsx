@@ -19,7 +19,7 @@ const Page = () =>
             <h2 className="text-center">We only have 5 tables! Book your seat before they all are gone!</h2>
             <br />
             <div className="text-center">
-              <a href="/reservationspage"><button className="btn btn-lg btn-primary"><span className="fa fa-list-alt"></span> View Tables</button></a>
+              <a href="/reservations"><button className="btn btn-lg btn-primary"><span className="fa fa-list-alt"></span> View Tables</button></a>
               <a href="/reserve"><button className="btn btn-lg btn-danger"><span className="fa fa-credit-card"></span> Make Reservation</button></a>
             </div>
           </div>
