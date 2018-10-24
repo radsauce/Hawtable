@@ -14,4 +14,5 @@ app.engine('jsx', require('express-react-views').createEngine())
 // require('./routes/apiRoutes')(app)
 require('./routes/htmlRoutes')(app)
 
-app.listen(3000, _ => console.log('http://localhost:3000'))
+const PORT = process.env.PORT || 3000
+app.listen(PORT, _ => console.log('http://localhost:3000'))
