@@ -64,16 +64,18 @@ const Reservations = () =>
                   </form>
                 </div>
               </div>
-              <footer className="footer">
-                <div className="container">
-                  <p />
-                  <a href="/api/tables">API Table Link</a> |
-          <a href="/api/waitlist">API Wait List</a>
-                </div>
-              </footer>
             </div>
-                  </body>
-                  </html>
-</Fragment>
+          </div>
+          <footer className="footer">
+            <div className="container">
+              <p />
+              <a href="/api/tables">API Table Link</a> |
+          <a href="/api/waitlist">API Wait List</a>
+            </div>
+          </footer>
+        </div>
+      </body>
+    </html>
+  </Fragment>
 
-      module.exports = Reservations
+module.exports = Reservations
