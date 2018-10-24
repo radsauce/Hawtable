@@ -1,15 +1,16 @@
 const express = require('express')
+const bodyparser = require('body-parser')
 const path = require('path')
-const bodyParser = require('body-parser')
+
 const app = express()
 
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'jsx')
+app.use(bodyparser.urlencoded({extended: true}))
+app.use(bodyparser.json())
 
-app.use(bodyParser.urlencoded({ extended: true }))
-app.use(bodyParser.json())
+app.engine('jsx', require('express-react-views').createEngine())
 
+require('./routes')(app)
 
-require("./routes/htmlRoutes")(app)
-require("./routes/apiRoutes")(app)
-
-
-app.listen(3000, () => console.log('http://localhost:3000'))
+app.listen(3000, _ => console.log('http://localhost:3000'))
